@@ -1,0 +1,171 @@
+:root {
+    --stec-font: "Open Sans", "urw-din", sans-serif;
+    --stec-text-color: #ffff00;
+    --stec-bg-color: #003399;
+
+}
+
+div#timer_caption, div#timer_container > div#timer_box {
+    background-color: var(--stec-bg-color);
+}
+
+div#timer_caption {
+
+    padding: 2.5%;
+    
+}
+
+div#timer_caption h1 {
+    font-family: var(--stec-font);
+    color: var(--stec-text-color);
+    text-align: center;
+}
+
+div#timer_container h1 {
+    width: 35%;
+    height: 50px;
+    align-self: end;
+    margin: 0;
+    text-align: center;
+    inset-inline-start: 30px;
+}
+
+div#timer_container p {
+    font-size: 1.25rem;
+    margin: 0;
+    line-height: 50px;
+}
+
+div#timer_container p.timer_values, p.separators {
+    font-size: 3rem;
+}
+
+div#timer_container #header_caption {
+    display: flex;
+    width: 70%;
+    min-width: 300px;
+    margin: auto;
+    justify-content: space-evenly;
+}
+
+div#timer_container .header_lines {
+    width: 20%;
+    height: 100px;
+    background-color: black;
+    clip-path: inset(75px 0 20px 0);
+}
+
+
+div#timer_container {
+    font-family: var(--stec-font);
+    display: flex;
+    width: 70%;
+    min-width: 300px;
+    height: 200px;
+    margin: auto;
+    justify-content: center;
+    box-sizing: border-box;
+    z-index: 0;
+}
+
+div#timer_container #timer_box {
+    display: flex;
+    width: 93.75%;
+    min-width: 281.25px;
+    height: 150px;
+    margin: auto;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+
+div#timer_container .timer_cells {
+    display: inline;
+    width: 130px;
+    text-align: center;
+}
+
+div#timer_caption, div#timer_container div#timer_box {
+    padding: 5px;
+}
+
+div#timer_container .timer_cells p {
+    color: var(--stec-text-color);
+}
+
+div#timer_container .separator_cells {
+    width: 6.25%;
+    text-align: center;
+    margin: 25px 0;
+    align-self: stretch;
+}
+
+div#timer_container .separators::after {
+    content: ":";
+    color: var(--stec-text-color);
+    font-size: 2.5rem;
+}
+
+@media only screen and (max-width: 1200px) {
+    div#timer_container p {
+        font-size: 1rem;
+    }
+
+    div#timer_container h1 {
+        font-size: 1.7rem;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+
+    div#timer_container h1 {
+        font-size: 1.15rem;
+    }
+}
+
+/* PARTICIPANTS */
+
+div#participants_container {
+    background-color: white;
+    font-family: var(--kc-font);
+    min-width: 300px;
+    height: auto;
+}
+
+div#participants_container table {
+    width: 100%;
+}
+
+div#participants_container thead {
+    background-color: black;
+    color: var(--kc-text-color);
+    width: 100%;
+}
+
+div#participants_container thead tr {
+    padding: 2.5%;
+    font-size: 1.125rem;
+}
+
+div#participants_container tbody {
+    color: black;
+    width: 100%;
+}
+
+div#participants_container tr {
+    display: flex;
+    gap: 1rem;
+}
+
+div#participants_container tbody tr {
+    padding: 1rem 0;
+}
+
+div#participants_container tbody tr:nth-child(odd) {
+    background-color: #ddd;
+}
+
+div#participants_container td, div#participants_container th {
+    width: 100%;
+}
