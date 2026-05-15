@@ -126,9 +126,17 @@ div#timer_container .separators::after {
 
 /* PARTICIPANTS */
 
+div#stec_caption {
+    text-align: center;
+    color: var(--stec-text-color);
+    background-color: var(--stec-bg-color);
+    font-family: var(--stec-font);
+    padding: 2.5%;
+}
+
 div#participants_container {
     background-color: white;
-    font-family: var(--kc-font);
+    font-family: var(--stec-font);
     min-width: 300px;
     height: auto;
 }
@@ -139,7 +147,7 @@ div#participants_container table {
 
 div#participants_container thead {
     background-color: black;
-    color: var(--kc-text-color);
+    color: var(--stec-text-color);
     width: 100%;
 }
 
